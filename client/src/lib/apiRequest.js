@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiRequest = axios.create({
-    baseURL: "https://vizagestates-1.onrender.com/api",
+    baseURL: "http://localhost:8000/api",
    withCredentials: true,
 });
 
