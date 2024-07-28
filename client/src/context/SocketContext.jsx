@@ -9,7 +9,7 @@ export const SocketContextProvider = ({ children }) => {
   const {currentUser} = useContext(AuthContext);
 
   useEffect(() => {
-    const newSocket = io("https://vizagestates-2.onrender.com");
+    const newSocket = io("http://localhost:4000");
     setSocket(newSocket);
 
     return () => newSocket.close();
